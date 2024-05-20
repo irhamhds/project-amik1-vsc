@@ -1,0 +1,304 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Roboto',  sans-serif; 
+	scroll-behavior: smooth;
+}
+/* Style untuk navbar */
+nav {
+	background-color: #333; 
+	color: white; 
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	color: white; 
+	z-index: 1000;
+}
+
+nav ul {
+	list-style-type: none; /* Menghilangkan bullets pada daftar */
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	flex: 1; /* Membagi lebar secara merata */
+}
+
+nav ul li a {
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+nav ul li a:hover {
+	background-color: #555; /* Warna latar belakang saat hover */
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	margin:0px;
+	padding:0px; 
+}
+
+.margin-left{
+	margin-left: 28px;
+}
+
+.black{
+	background-color: rgb(68, 51, 224);
+}
+
+.semi-black{
+	background-color: #111;
+}
+
+.white{
+	background-color: white;
+}
+
+.light-grey{
+	background-color: lightgrey;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.row:after  {
+	content: '';
+	clear: both;
+	display: block;
+	margin: 0px; 
+} 
+
+.row div {
+	float: left; 
+}
+
+.center {
+	text-align: center; 
+}
+
+.font-white{
+	color: white;
+	padding-bottom: 10px;
+}
+
+.font-black{
+	color: black;
+}
+
+.padding-8 {
+	padding: 8px; 
+}
+.padding-16 {
+	padding: 16px;
+} 
+
+.padding-32 {
+	padding: 32px; 
+} 
+
+.padding-64 {
+	padding: 64px; 
+}
+.padding-128 {
+	padding: 128px;
+}
+#portofolio{
+	text-align: center;
+}
+#displayed-image {
+	width: 600px; 
+	height: 400px; 
+	object-fit: cover; 
+}  
+button {
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 2px solid #4CAF50;
+	background-color: #4CAF50;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+button:hover {
+	background-color: #45a049;
+	border-color: #45a049;
+}
+button:active {
+	background-color: #3e8e41;
+	border-color: #3e8e41;
+}
+img {
+	border-radius: 20px;
+	cursor: pointer;
+	width: 400px; 
+	height: 400px; 
+	
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar footer */
+}
+
+footer h5 {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer h5 em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/*  For  mobile  phones:  */
+[class*="col-"] {
+	width: 100%;
+} 
+
+@media only screen and (min-width: 600px)  {
+	/*For tablets: (ukuran layar lebih besar dari 600px)  */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;} 
+} 
+
+@media only screen and (min-width: 768px) {
+	/*For  desktop: (ukuran layar lebih besar dari 768px)*/
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;} 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+} 
+
+.img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+h1{
+	font-size: 64px; 
+} 
+
+h2{
+	font-size: 32px;
+	padding: 20px;
+}
+
+h4{
+	font-size: 18px; 
+}
+
+.hitam{
+	background-color: black;
+}
+
+table {
+	border: 1px solid #ccc;
+	width: 100%;
+	margin:0;
+	padding:0;
+	border-collapse: collapse;
+	border-spacing: 0; 
+} 
+
+table tr {
+	border: 1px solid #ddd;
+	padding: 5px; 
+} 
+
+table th, table td {
+	padding: 10px;
+	text-align: center; 
+} 
+
+table th {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px; 
+}
+
+.footer {
+    background-color: #0099cc;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	padding: 15px;
+}
+
+@media screen and (max-width: 600px)  {
+	table {
+		border: 0;
+	}
+	table thead {
+		display: none;
+	}
+	table tr {
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #ddd;
+	}
+	table td { 
+		display: block; 
+		text-align: right; 
+		font-size: 13px;
+		border-bottom: 1px dotted #ccc;
+	}
+	table td:last-child  {
+		border-bottom:  0;
+	}
+	table td:before  {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+	} 
+} 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="yes">
+	<title>Responsive Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="black">
+	<div id="home" class="row">
+		<div class="col-12 center">
+			<h4 class="font-white">My Personal Blog</h4>
+			<h1 class="font-white">Irham Hadisuma</h1>
+			<h4 class="font-white">Web Developer | Programmer | Entrepreneur</h4>
+		</div>
+		<div class="col-12 center padding-32">
+			<button style="border:none; font-weight:bold; font-size:16px;" class="col-2 center padding-16 white"><a href="https://www.linkedin.com/in/irham-hadisuma-a92a2b259/">My Linkedin</a></button>
+		</div>
+		<nav class="col-12 center padding-16">
+			<ul class="semi-black">
+				<li class="col-3"><a href="#home">Home</a></li>
+				<li class="col-3"><a href="#aboutme">About Me</a></li>
+				<li class="col-3"><a href="#skills">Skills</a></li>
+				<li class="col-3"><a href="#portofolio">Portfolio</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="aboutme" class="row white padding-32">
+		<div class="col-4 center padding-16" style="float:left;">
+			<img src="./image/irham.jpeg" />
+		</div>
+		<div class="col-8  padding-16" style="float:left;">
+			<h2>My Profile</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<div id="skills" class="row black font-white padding-32">
+		<div class="col-8 center padding-32">
+			<h1 class="col-12 center">Skills</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>Subject</th>
+						<th>Related Project</th>
+						<th>Desc</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="No.">#1</td>
+						<td data-label="Subject">Algorithm and logica javascript</td>
+						<td data-label="Related  Project">hacker rank</td>
+						<td data-label="Desc">I can complete tasks on hackerrank</td>
+					</tr>
+					<tr>
+						<td data-label="No.">#2</td>
+						<td data-label="Subject">bootstrap</td>
+						<td data-label="Related  Project">create a UI portfolio landing page project</td>
+						<td data-label="Desc">I can create a landing page project using the bootstrap framework</td>
+					</tr>
+					<tr>
+						<td data-label="No.">#3</td>
+						<td data-label="Subject">react js</td>
+						<td data-label="Related  Project">create a simple online store application</td>
+						<td data-label="Desc">I have created a simple ecommerce project using a javascript framework with react js</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-4 center padding-32" style="padding-top:128px;">
+			<img src="./image/coding2.png" width="600" height="500" />
+		</div>
+	</div>
+	<div id="portofolio" class="row black font-white padding-32">
+			<h2>Portfolio</h2>
+			<img id="displayed-image" src="./image/coding1.jpg" class="object-fit: cover;"/>
+			<br><br>
+			<button onclick="prev_image()">Prev</button>
+			<button onclick="next_image()">Next</button>
+	</div>	
+		<footer>
+			<h5>&copy; <em id="date"></em>2024 by uts irham hadisuma</h5>
+		</footer>
+	<script src="script.js"></script>
+</body>
+</html>
